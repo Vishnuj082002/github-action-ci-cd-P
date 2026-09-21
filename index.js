@@ -4,11 +4,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.status(200).json({ status: "ok", message: "Vishnu varadhan"});
+  res.status(200).json({ status: "ok", message: "Github Actions"});
 });
 
 app.get("/health", (req, res) => {
-  res.status(200).json({ status: "ok", message: "he is very smart"});
+  res.status(200).json({ status: "ok", message: "Server is healthy"});
 });
 
 if (require.main === module) {
